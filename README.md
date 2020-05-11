@@ -14,41 +14,42 @@ Sosyal alanda yenilikçilik yaratan ve hayvan barınakları üzerine bir girişi
  
 Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır. İkinci prototip barınakların ihtiyaçlarına göre tasarlanmaktadır. Kullanılabilir ve sürdürülebilir bir web uygulama demosu çıkarmak adına mevcut bir belediye barınağı ile görüşmeler sürdürülmektedir. Sistem önerisi açık kaynak doğası gereğince, bireyler ve kurumlar tarafından özgürce katkı sunulmaya açıktır.
 
-#LOGIN PAGE
+## LOGIN PAGE
 ![login](https://user-images.githubusercontent.com/29989590/81607421-55842300-93dd-11ea-9192-4bb4b35deff7.png)
 
-#REGISTER AS PAGE
+## REGISTER AS PAGE
 ![register-as](https://user-images.githubusercontent.com/29989590/81607520-7cdaf000-93dd-11ea-8228-2e8be3582b74.png)
 
-#REGISTER PAGE
+## REGISTER PAGE
 ![register](https://user-images.githubusercontent.com/29989590/81607573-90865680-93dd-11ea-84a6-76c3b51a12f1.png)
 
-#CONFIRMATION PAGE
+## CONFIRMATION PAGE
 ![confirmation](https://user-images.githubusercontent.com/29989590/81609683-fb855c80-93e0-11ea-8877-1fdd5b068f43.png)
 
-#PROFILE PAGE AVAILABLE FRIENDS
+## PROFILE PAGE - AVAILABLE FRIENDS
 ![pro1](https://user-images.githubusercontent.com/29989590/81607622-a5fb8080-93dd-11ea-84c7-b50bd70e3a60.png)
 
-#PROFILE PAGE ADOPT/FOSTER
+## PROFILE PAGE - ADOPT/HOME FOSTER
 ![pro2](https://user-images.githubusercontent.com/29989590/81607730-d2af9800-93dd-11ea-91c3-1f61d759e4c1.png)
 
-#PROFILE PAGE VOLUNTEER
+## PROFILE PAGE - VOLUNTEER
 ![pro3](https://user-images.githubusercontent.com/29989590/81607793-ef4bd000-93dd-11ea-919e-5e47a836d462.png)
 
-#PROFILE PAGE ENROLL PET
+## PROFILE PAGE - ENROLL PET
 ![pro4](https://user-images.githubusercontent.com/29989590/81607892-130f1600-93de-11ea-9b73-5c47745d2e6b.png)
 
-#PROFILE PAGE CARETAKER
+## PROFILE PAGE - CARETAKER
 ![pro5](https://user-images.githubusercontent.com/29989590/81607932-24f0b900-93de-11ea-8ba7-f5fba3b193fe.png)
 
-#PROFILE PAGE DONATE and CONTACT
+## PROFILE PAGE - DONATE and CONTACT
 ![pro6](https://user-images.githubusercontent.com/29989590/81608006-45207800-93de-11ea-8448-ad87d00eb223.png)
 
-#PET PAGE - PET SHOWCASE
+## PET PAGE - PET SHOWCASE
 ![pet1](https://user-images.githubusercontent.com/29989590/81609959-68005b80-93e1-11ea-8a72-3d0dd080ea4e.png)
 
-#PET PAGE - FEATURES
+
+## PET PAGE - FEATURES
 ![pet3](https://user-images.githubusercontent.com/29989590/81610041-86665700-93e1-11ea-9af9-075362ecda03.png)
 
-#PET PAGE - FUNCTIONS
+## PET PAGE - APPLICATIONS
 ![pet2](https://user-images.githubusercontent.com/29989590/81610101-9e3ddb00-93e1-11ea-918e-7edcb7461ddb.png)
