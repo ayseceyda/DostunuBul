@@ -23,6 +23,9 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 #REGISTER PAGE
 ![register](https://user-images.githubusercontent.com/29989590/81607573-90865680-93dd-11ea-84a6-76c3b51a12f1.png)
 
+#CONFIRMATION PAGE
+![confirmation](https://user-images.githubusercontent.com/29989590/81609683-fb855c80-93e0-11ea-8877-1fdd5b068f43.png)
+
 #PROFILE PAGE AVAILABLE FRIENDS
 ![pro1](https://user-images.githubusercontent.com/29989590/81607622-a5fb8080-93dd-11ea-84c7-b50bd70e3a60.png)
 
@@ -41,4 +44,11 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 #PROFILE PAGE DONATE and CONTACT
 ![pro6](https://user-images.githubusercontent.com/29989590/81608006-45207800-93de-11ea-8448-ad87d00eb223.png)
 
+#PET PAGE - PET SHOWCASE
+![pet1](https://user-images.githubusercontent.com/29989590/81609959-68005b80-93e1-11ea-8a72-3d0dd080ea4e.png)
 
+#PET PAGE - FEATURES
+![pet3](https://user-images.githubusercontent.com/29989590/81610041-86665700-93e1-11ea-9af9-075362ecda03.png)
+
+#PET PAGE - FUNCTIONS
+![pet2](https://user-images.githubusercontent.com/29989590/81610101-9e3ddb00-93e1-11ea-918e-7edcb7461ddb.png)
