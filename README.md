@@ -4,7 +4,8 @@ Dostunu Bul, barınak hayvanlarının yaşam koşullarını iyileştirme esasın
  
 Tasarlanan sistem, barınak hayvanları ile insanlar arasında sağlam bir köprü kurmayı amaçlamaktadır. Proje içeriğinin eğitim, sosyal yaşam, sağlık gibi hayatın her alanına uzandığı düşünüldüğünde, uzun vadede sokak hayvanlarına yaşatılan terk edilme, şiddet, zulüm gibi olumsuz durumlara engel olunacaktır.  
  
-Sosyal alanda yenilikçilik yaratan ve hayvan barınakları üzerine bir girişim olan Dostunu Bul ’un güttüğü amaçlar şu şekilde listelenmiştir: * Sokak hayvanlarının süregelen sorunlarına, çağı yakalayan ve modern önerilerle çözüm sağlaması,  
+Sosyal alanda yenilikçilik yaratan ve hayvan barınakları üzerine bir girişim olan Dostunu Bul ’un güttüğü amaçlar şu şekilde listelenmiştir: 
+* Sokak hayvanlarının süregelen sorunlarına, çağı yakalayan ve modern önerilerle çözüm sağlaması,  
 * Barınak hayvanları ve muhtemel sahipleri arasında uzmanlarca onaylanan, güvenilir bir eşleşme sağlaması, 
 * Hayvan barınaklarında gerçekleştirilen geçici ve kalıcı sahiplendirme işlemlerinin takip edilebilir hale getirmesi, 
 * Barınaklarla ilgili yaklaşımları global çapta kabul görülen ülkelerin kullandıkları metotların Türkiye’ye uyarlanması, 
