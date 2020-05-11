@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pet Page</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="pet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script type="text/javascript" src="pet.js"></script>
+  <script src="https://kit.fontawesome.com/8b37508490.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <nav class="w3-sidebar w3-collapse w3-yellow w3-animate-left" style="z-index:3;width:270px;" id="mySidebar"><br>
+
+    <div class="w3-container">
+      <br>
+      <img class="pp" src="user-pp.JPG">
+      <br>
+      <a href="profile.html">
+        <p style="text-align:center;color:white;font-weight:bold;font-size:20px;"><i><b>aycey71</b></i></p>
+      </a>
+      <div class="row badge-row">
+        <div class="column" style="color: white">
+          <i class="fas fa-id-badge fa-2x"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-certificate fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-ribbon fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-paw fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-people-carry fa-2x unlocked"></i>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="w3-bar-block">
+      <a href="#ava-friends" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-search fa-fw w3-margin-right fa-2x"></i>Available Friends</a>
+      <a href="#mypets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paw fa-fw w3-margin-right fa-2x"></i>My Pets</a>
+      <a href="#adopt" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-hospital-alt fa-fw w3-margin-right fa-2x"></i>Adopt</a>
+      <a href="#foster" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-hospital-alt fa-fw w3-margin-right fa-2x"></i>Foster</a>
+      <a href="#volunteer" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-first-aid fa-fw w3-margin-right fa-2x"></i>Volunteer</a>
+      <a href="#caretaker" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-user-tag fa-fw w3-margin-right fa-2x"></i>Caretaker</a>
+      <a href="#wallet" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-wallet fa-fw w3-margin-right fa-2x"></i>Wallet</a>
+      <a href="#donate" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dollar fa-fw w3-margin-right fa-2x"></i>Donate</a>
+      <a href="#badges" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-trophy fa-fw w3-margin-right fa-2x"></i>Earn Badges</a>
+      <a href="#forum" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-comments fa-fw w3-margin-right fa-2x"></i>Forum</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right fa-2x"></i>Contact</a>
+      <a href="#settings" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-user-cog fa-fw w3-margin-right fa-2x"></i>Settings</a>
+      <br>
+      <br>
+      <div class="connection-row">
+        <a href="#"><i class="fab fa-facebook-f fa-2x" style="color: white"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x" style="color: white"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g fa-2x" style="color: white"></i></a>
+      </div>
+  </nav>
+
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <div class="w3-main" style="margin-left:280px">
+    <br><br>
+    <div class="container-heading">
+      <br>
+      <p style="color:#5a6c21; font-size:50px; text-align:center;"><i>#SHDF7438 - <b>Badem</b></i></p>
+    </div>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block lab" src="lab3.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block lab" src="lab2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block lab" src="lab1.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="container-table">
+      <div class="text-center">
+        <table class="table table-striped table-dark table-sm tb" style="width:800px;">
+          <tbody>
+            <tr>
+              <th scope="row">ID</th>
+              <td>#SHDF7438</td>
+            </tr>
+            <tr>
+              <th scope="row">Name</th>
+              <td>Badem</td>
+            </tr>
+            <tr>
+              <th scope="row">Type</th>
+              <td>Stray</td>
+            </tr>
+            <tr>
+              <th scope="row">Owner</th>
+              <td colspan="2">Muğla Shelter</td>
+            </tr>
+            <tr>
+              <th scope="row">Adopted</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">Home Fostered</th>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">Remote Fostered</th>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Species</th>
+              <td colspan="2">Dog</td>
+            </tr>
+            <tr>
+              <th scope="row">Breed</th>
+              <td colspan="2">Labrador Retriever</td>
+            </tr>
+            <tr>
+              <th scope="row">Age</th>
+              <td colspan="2">8 years</td>
+            </tr>
+            <tr>
+              <th scope="row">Sex</th>
+              <td colspan="2">Female</td>
+            </tr>
+            <tr>
+              <th scope="row">Weight</th>
+              <td>32 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Height</th>
+              <td>60 cm</td>
+            </tr>
+            <tr>
+              <th scope="row">Color</th>
+              <td>Yellow</td>
+            </tr>
+            <tr>
+              <th scope="row">Good With Children</th>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Origin</th>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <th scope="row">Info</th>
+              <td>Gun Dog</td>
+            </tr>
+            <tr>
+              <th scope="row">Temperament</th>
+              <td>Gentle, Intelligent, Friendly, Cheerful</td>
+            </tr>
+            <tr>
+              <th scope="row">Hypoallergenic</th>
+              <td>No</td>
+            </tr>
+            <tr>
+              <th scope="row">Life Expectancy</th>
+              <td>10-12 Years</td>
+            </tr>
+            <tr>
+              <th scope="row">Size</th>
+              <td>Large</td>
+            </tr>
+            <tr>
+              <th scope="row">Pregnancy</th>
+              <td colspan="2">-</td>
+            </tr>
+            <tr>
+              <th scope="row">Activity Level</th>
+              <td colspan="2">Frenetic</td>
+            </tr>
+            <tr>
+              <th scope="row">Spayed</th>
+              <td colspan="2">Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Special Conditions</th>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+      <br>
+      <br>
+      <br>
+      <div class="w3-container">
+        <div class="row">
+          <div class="col">
+            <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Home Foster</button>
+          </div>
+          <div class="col">
+            <button onclick="alertFunc()" class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Adopt</button>
+          </div>
+          <div class="col">
+            <button class="w3-button w3-padding-large" style="background-color: grey;   color: black;font-weight:bold; font-size:25px;"><i class="fas fa-lira-sign"></i> Apply for Remote Foster</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-center w3-container-buttons">
+      <br>
+      <br>
+      <br>
+      <div class="w3-container">
+        <div class="row">
+          <div class="col">
+            <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Forum Search <b>#SHDF7438</b></button>
+          </div>
+          <div class="col">
+            <button onclick="alertFunc()" class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Adopt</button>
+          </div>
+          <div class="col">
+            <button class="w3-button w3-padding-large" style="background-color: grey;   color: black;font-weight:bold; font-size:25px;"><i class="fas fa-lira-sign"></i> Apply for Remote Foster</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 footer" style="margin-left:-12px;margin-right:-30px; margin-top:-20px;">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h4><b>About DostunuBul Application</b> </h4>
+          <p>Our proposal commits to a perspective, where animal lives matter. Protection, care, empathy would equally distribute by the shelter system without any profits. On this report, design and analysis have been applied to demo version
+            of
+            adoption and fostering system.</p>
+        </div>
+        <div class="w3-third">
+          <h4><b>Latest</b></h4>
+          <ul>
+            <li>
+              <p><u>Newest Shelters</u></p>
+            </li>
+            <li>
+              <p><u>Emergency Requirements List</u></p>
+            </li>
+            <li>
+              <p><u>Donate</u></p>
+            </li>
+            <li>
+              <p><u>News on DostunuBul</u></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+          <h4><b>Our Contact Page</b></h4>
+          <p><b>Email:</b> shelter.app@gmail.com</p>
+          <p><b>Address:</b> X street, Y building, Istanbul/Turkey</p>
+          <p><b>Telephone:</b> +90 212 852 741</p>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

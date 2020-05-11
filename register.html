@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Register Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="register-styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/8b37508490.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="dist/js/datepicker.min.js"></script>
+  <script src="dist/js/locales/fr.min.js"></script>
+  <script type="text/javascript" src="register.js"></script>
+
+  <div class="container bootstrap">
+    <div class="row">
+      <div class="container">
+        <div class="text-center">
+          <br><br><br>
+          <h2 class="heading"><i>Please fill the form</i></h2>
+        </div>
+      </div>
+      <div class="container bootstrap">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!--
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs">
+          <li><a data-toggle="tab" href="#vet">
+              <h3>Return <i class="fas fa-undo"></i></h3>
+            </a></li>
+          <li><a data-toggle="tab" href="#owner">
+              <h3>Owner</h3>
+            </a></li>
+          <li class="pos-owner-bg"><a data-toggle="tab" href="#pos-owner">
+              <h3>Possible Owner</h3>
+            </a></li>
+          <li><a data-toggle="tab" href="#caretaker">
+              <h3>Caretaker</h3>
+            </a></li>
+          <li><a data-toggle="tab" href="#volunteer">
+              <h3>Volunteer</h3>
+            </a></li>
+          <li><a data-toggle="tab" href="#shelter-man">
+              <h3>Shelter Management</h3>
+            </a></li>
+          <li><a data-toggle="tab" href="#vet">
+              <h3>Veterinary</h3>
+            </a></li>
+        </ul>
+        <br><br>
+      </div>
+    </div>
+  -->
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="pos-owner">
+          <div class="row">
+
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" style="margin-left: 20px; border: 5px solid #48B461; border-radius:50%;">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h2><b>Personal Info</b></h2>
+              <hr>
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>Address-Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>Address-District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <h4>Birth Date</h4>
+              <input type="date" class="form-control" placeholder="please enter your birth date" id="age" name="age" required>
+              <h4>Have ever been on an animal related crime before?</h4>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="crime-yes">
+                <label class="form-check-label">
+                  <h5>Yes</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" id="crime-no">
+                <label class="form-check-label">
+                  <h5>No</h5>
+                </label>
+              </div>
+              <h4>If yes please explain or we will search it for you</h4>
+              <textarea class="form-control" id="specify_where_info" rows="3"></textarea>
+              <h4>Please describe your job</h4>
+              <textarea class="form-control" id="desc_job" rows="3"></textarea>
+              <h2><b>Pet Info</b></h2>
+              <hr>
+              <h4>How many pets do you have?</h4>
+              <input type="number" class="form-control" id="pet_count" name="pet_count">
+              <input class="form-check-input" type="checkbox" id="none_pets" style="margin-left:0px;">
+              <label class="form-check-label" style="margin-left:20px;">
+                <h5>Got No Pets</h5>
+              </label><br>
+              <h4>Where did you get your pets?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="from-shelter">
+                <label class="form-check-label">
+                  <h5>From an animal shelter</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="from-person">
+                <label class="form-check-label">
+                  <h5>From a person (via internet etc.)</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="from-pet-shop">
+                <label class="form-check-label">
+                  <h5>From a pet shop</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="from-other">
+                <label class="form-check-label">
+                  <h5>Other</h5>
+                </label>
+              </div>
+              <label for="other_specify">
+                <h4>If other please specify</h4>
+              </label>
+              <textarea class="form-control" id="specify_where_info" rows="3"></textarea>
+              <label for="species_choose">
+                <h4>Please choose species</h4>
+              </label>
+              <br>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="dog-select">
+                <label class="form-check-label">
+                  <h5>Dog</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="cat-select">
+                <label class="form-check-label">
+                  <h5>Cat</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="bird-select">
+                <label class="form-check-label">
+                  <h5>Bird</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="fish-select">
+                <label class="form-check-label">
+                  <h5>Fish</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="hamster-select">
+                <label class="form-check-label">
+                  <h5>Hamster</h5>
+                </label>
+              </div>
+              <br>
+              <label for="other_specify">
+                <h4>If other please specify</h4>
+              </label>
+              <textarea class="form-control" id="specify_conditions" rows="3"></textarea>
+              <label for="other_specify">
+                <h4>Please specify any special condition/disease(allergenic etc.) of your pets</h4>
+              </label>
+              <textarea class="form-control" id="specify_other" rows="3"></textarea>
+              <h2><b>Living Area Info</b></h2>
+              <h4>We want to remind you that, your house will be search</h4>
+              <h4>(if your application approves)</h4>
+              <hr>
+              <h4>Do you <b>own</b> your house or is it <b>rent</b>?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes-own-rent">
+                <label class="form-check-label">
+                  <h5>Yes</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="no-own-rent">
+                <label class="form-check-label">
+                  <h5>No</h5>
+                </label>
+              </div>
+              <h4>If rent, then please describe your landlord's pet policy</h4>
+              <textarea class="form-control" id="landlord_info" rows="3"></textarea>
+              <label for="info_landlord"></label>
+              <h4>Do you have a <b>yard</b>?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes-yard">
+                <label class="form-check-label">
+                  <h5>Yes</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="no-yard">
+                <label class="form-check-label">
+                  <h5>No</h5>
+                </label>
+              </div>
+              <h4>Please enter the approximate fence height (m)</h4>
+              <input type="number" class="form-control" id="fence_height">
+              <input class="form-check-input" type="checkbox" id="none_fence" style="margin-left:0px;">
+              <label class="form-check-label" style="margin-left:20px;">
+                <h5>Got No Fence</h5>
+              </label><br>
+              <h4>Are you living <b>alone</b>? Or do you have a <b>family</b>?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes-yard">
+                <label class="form-check-label" for="alone-with">
+                  <h5>I am living alone</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="no-yard">
+                <label class="form-check-label" for="family-with">
+                  <h5>I am living with my family</h5>
+                </label>
+              </div>
+              <h4>If you living with a family please enter the children count</h4>
+              <input type="number" class="form-control" id="child_count">
+              <h4>How many hours your pet will be alone at home?</h4>
+              <input type="number" class="form-control" id="child_count">
+              <h4>Are there any dangerous place/corner at your home?</h4>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="yes-dang">
+                <label class="form-check-label" for="dang-yes">
+                  <h5>Yes</h5>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="no-dang">
+                <label class="form-check-label" for="dang-no">
+                  <h5>No</h5>
+                </label>
+              </div>
+              <h2><b>Reference Info</b></h2>
+              <h4>(Please enter at least 1 reference)</h4>
+              <hr>
+              <a href="#" class="btn btn-dark btn-sm btn-approve" role="button" aria-pressed="true"><i class="fas fa-plus"></i> Add Reference</a>
+              <h4>Reference first name</h4>
+              <input type="text" class="form-control" id="ref_fname" placeholder="please enter the first name" required>
+              <h4>Reference last name</h4>
+              <input type="text" class="form-control" id="ref_lname" placeholder="please enter the last name" required>
+              <h4>Reference email</h4>
+              <input type="email" class="form-control" id="ref_email" placeholder="example@email" required>
+              <h4>Reference phone</h4>
+              <input type="text" class="form-control" id="ref_phone" placeholder="phone" title="please enter the phone">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="data_accept">
+                <label class="form-check-label">
+                  <h5> I agree that all the data provided are correct and may used to search and examine</h5>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="term_accept">
+                <label class="form-check-label">
+                  <h5> Agree to terms and conditions</h5>
+                </label>
+              </div>
+              <br><br>
+              <div class="text-center">
+                <a type="button" class="btn btn-approve btn-block" href="confirmation.html">
+                  <p class="app-text">Submit</p>
+                </a>
+              </div>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div id="owner" class="tab-pane fade">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>User name</h4>
+              <input type="text" class="form-control" name="user_name" id="user_name" placeholder="please enter your user name" required>
+              <h4>Email</h4>
+              <input type="email" class="form-control" name="email" id="email" placeholder="example@email" required>
+              <h4>Phone</h4>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="please enter your phone" required>
+              <h4>Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <br><br>
+              <div class="text-center">
+                <button type="button" class="btn" name="Approve"><i class="fas fa-check"></i>
+                  <p class="app-text"> Approve</p>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="caretaker">
+
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>User name</h4>
+              <input type="text" class="form-control" name="user_name" id="user_name" placeholder="please enter your user name" required>
+              <h4>Email</h4>
+              <input type="email" class="form-control" name="email" id="email" placeholder="example@email" required>
+              <h4>Phone</h4>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="please enter your phone" required>
+              <h4>Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <button class="btn" type="submit" name="Approve"><i class="fas fa-check"></i> Approve</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="volunteer">
+
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>User name</h4>
+              <input type="text" class="form-control" name="user_name" id="user_name" placeholder="please enter your user name" required>
+              <h4>Email</h4>
+              <input type="email" class="form-control" name="email" id="email" placeholder="example@email" required>
+              <h4>Phone</h4>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="please enter your phone" required>
+              <h4>Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <button class="btn" type="submit" name="Approve"><i class="fas fa-check"></i> Approve</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="shelter-man">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>User name</h4>
+              <input type="text" class="form-control" name="user_name" id="user_name" placeholder="please enter your user name" required>
+              <h4>Email</h4>
+              <input type="email" class="form-control" name="email" id="email" placeholder="example@email" required>
+              <h4>Phone</h4>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="please enter your phone" required>
+              <h4>Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <button class="btn" type="submit" name="Approve"><i class="fas fa-check"></i> Approve</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade " id="vet">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail">
+              <h4 class="center-block"><b>Upload a photo</b></h4>
+              <input type="file" class="file-upload">
+            </div>
+
+            <div class="col-lg-9">
+              <h4>First name</h4>
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name" required>
+              <h4>Last name</h4>
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name" required>
+              <h4>User name</h4>
+              <input type="text" class="form-control" name="user_name" id="user_name" placeholder="please enter your user name" required>
+              <h4>Email</h4>
+              <input type="email" class="form-control" name="email" id="email" placeholder="example@email" required>
+              <h4>Phone</h4>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="phone" title="please enter your phone" required>
+              <h4>Province</h4>
+              <input type="text" class="form-control" name="province" id="province" placeholder="please enter your province" required>
+              <h4>District</h4>
+              <input type="text" class="form-control" name="district" id="district" placeholder="please enter your district" required>
+              <button class="btn" type="submit" name="Approve"><i class="fas fa-check"></i> Approve</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<title>Profile Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="profile.css">
+<link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+
+<body class="w3-content" style="max-width:2500px;">
+  <script type="text/javascript" src="profile.js"></script>
+  <script src="https://kit.fontawesome.com/8b37508490.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-yellow w3-animate-left" style="z-index:3;width:270px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <br>
+      <img class="pp" src="user-pp.JPG">
+      <br>
+      <a href="profile.html">
+        <p style="text-align:center;color:white;font-weight:bold;font-size:20px;"><i><b>aycey71</b></i></p>
+      </a>
+      <div class="row badge-row">
+        <div class="column" style="color: white">
+          <i class="fas fa-id-badge fa-2x"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-certificate fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-ribbon fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-paw fa-2x unlocked"></i>
+        </div>
+        <div class="column" style="color: white">
+          <i class="fas fa-people-carry fa-2x unlocked"></i>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="w3-bar-block">
+      <a href="#ava-friends" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-search fa-fw w3-margin-right fa-2x"></i>Available Friends</a>
+      <a href="#mypets" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paw fa-fw w3-margin-right fa-2x"></i>My Pets</a>
+      <a href="#adopt" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-hospital-alt fa-fw w3-margin-right fa-2x"></i>Adopt</a>
+      <a href="#foster" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-hospital-alt fa-fw w3-margin-right fa-2x"></i>Foster</a>
+      <a href="#volunteer" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-first-aid fa-fw w3-margin-right fa-2x"></i>Volunteer</a>
+      <a href="#caretaker" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-user-tag fa-fw w3-margin-right fa-2x"></i>Caretaker</a>
+      <a href="#wallet" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-wallet fa-fw w3-margin-right fa-2x"></i>Wallet</a>
+      <a href="#donate" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-dollar fa-fw w3-margin-right fa-2x"></i>Donate</a>
+      <a href="#badges" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-trophy fa-fw w3-margin-right fa-2x"></i>Earn Badges</a>
+      <a href="#forum" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-comments fa-fw w3-margin-right fa-2x"></i>Forum</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right fa-2x"></i>Contact</a>
+      <a href="#settings" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fas fa-user-cog fa-fw w3-margin-right fa-2x"></i>Settings</a>
+      <!--
+      <a href="index3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone fa-fw w3-margin-right fa-2x"></i>View As</a>
+      <a href="index3.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone fa-fw w3-margin-right fa-2x"></i>View As</a>
+    </div>
+  -->
+      <br>
+      <br>
+      <div class="connection-row">
+        <a href="#"><i class="fab fa-facebook-f fa-2x" style="color: white"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x" style="color: white"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g fa-2x" style="color: white"></i></a>
+      </div>
+  </nav>
+
+
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!--  job section
+    <header id="portfolio">
+      <div class="w3-container">
+        <div class="w3-section w3-bottombar w3-padding-10">
+          <span class="w3-margin-right"><i class="fas fa-filter fa-2x"></i><b>FILTER</b></span>
+          <button class="w3-button w3-black">ALL</button>
+          <button class="w3-button w3-white"><i class="fa fa-paw w3-margin-right"></i>Species</button>
+          <button class="w3-button w3-white"><i class="fa fa-paw w3-margin-right"></i>Breed</button>
+          <button class="w3-button w3-white w3-hide-small"><i class="fa fa-user w3-margin-right"></i>User</button>
+          <button class="w3-button w3-white"><i class="fa fa-star w3-margin-right"></i>Rate</button>
+          <button class="w3-button w3-white w3-hide-small"><i class="fa fa-clock-o w3-margin-right"></i>Appointment Time</button>
+          <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map w3-margin-right"></i>Location</button>
+        </div>
+      </div>
+    </header>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="jax.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Jax</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Fethiye, TR</b></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="russell.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Russell</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Datca, TR</b></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="lady.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lady</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Bodrum, TR</b></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="coliba.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Coliba</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Koycegiz, TR</b></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="mice.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Mike</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Kas, TR</b></i>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="andy.jpg" width="380" height="250" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Andy</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <i class="fa fa-clock-o w3-margin-right"><b> Mon-Fri 9AM-3PM </b></i>
+        <i class="fa fa-map-marker w3-margin-right"><b> Mugla, TR</b></i>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+        <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      </div>
+    </div>
+    -->
+  <div class="w3-main" style="margin-left:280px">
+    <header id="ava-friends">
+      <div class="w3-container"><br><br><br>
+        <h1 class="ava-heading"><b><i>Available Friends </i></b><a href="#"><i class="fa fa-refresh"></i></a></h1>
+        <br><br>
+        <div class="w3-row-padding w3-center" id="aboutmypets"><br>
+          <div class="w3-quarter">
+            <img class="ava-img" src="sh-dog1.jpg">
+            <h3>Adoption Suggestion</h3>
+            <div class="ava-exp">
+              <p> <i>Name:</i> Gece</p>
+              <p> <i>ID:</i> #SHDA9747</p>
+              <p> <i>Owner:</i> Antalya Shelter</p>
+              <p> <i>Species/Breed:</i> Dog/Labrador</p>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Visit Gece!</button>
+            <br>
+          </div>
+          <div class="w3-quarter">
+            <img class="ava-img" src="sh-cat1.jpg">
+            <h3>Caretaker Suggestion</h3>
+            <div class="ava-exp">
+              <p> <i>Name:</i> Paşa</p>
+              <p> <i>ID:</i> #OWCT5441</p>
+              <p> <i>Owner:</i> Gündüz Yılmaz</p>
+              <p> <i>Species/Breed:</i> Cat/Mixed</p>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Visit Paşa!</button>
+          </div>
+          <div class="w3-quarter">
+            <img class="ava-img" src="sh-dog2.jpg">
+            <h3>Fostering Suggestion</h3>
+            <div class="ava-exp">
+              <p> <i>Name:</i> Badem</p>
+              <p> <i>ID:</i> #SHDF7438</p>
+              <p> <i>Owner:</i> Muğla Shelter</p>
+              <p> <i>Species/Breed:</i> Dog/Labrador</p>
+            </div>
+            <br>
+            <a type="button" class="btn btn-primary btn-lg btn-block" href="pet.html">Visit Badem!</button></a>
+          </div>
+          <div class="w3-quarter">
+            <img class="ava-img" src="sh-cat2.jpg">
+            <h3>Adoption Suggestion</h3>
+            <div class="ava-exp">
+              <p> <i>Name:</i> Sakız</p>
+              <p> <i>ID:</i> #OWCA9432</p>
+              <p> <i>Owner:</i> Derya Yılmaz</p>
+              <p> <i>Species/Breed:</i> Cat/Mixed</p>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Visit Sakız!</button>
+          </div>
+        </div>
+        <br><br>
+        <br>
+
+        <header id="adopt">
+          <div class="w3-container" style="margin-left:-27px; margin-right:-27px; background-color:#354013;">
+            <div class="row">
+              <div class="col col-dog">
+                <img src="dog1.png">
+              </div>
+              <div class="col col-text-btn">
+                <p>You did not home fostered any pet yet!</p>
+                <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00; color: #5a6c21;font-weight:bold;">Home Foster Now! <i class="fas fa-play"></i></button>
+                <br><br><br>
+                <p>You did not adopted any pet yet!</p>
+                <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00; color: #5a6c21;font-weight:bold;">Adopt Now! <i class="fas fa-play"></i></button>
+              </div>
+            </div>
+          </div>
+          <br><br><br>
+
+          <header id="volunteer">
+            <div class="w3-row-padding w3-center">
+              <br>
+              <br>
+              <br>
+              <div class="w3-container">
+                <div class="row">
+                  <div class="col">
+                    <img class="mySlides" src="vol1.jpg">
+                    <img class="mySlides" src="vol2.jpg">
+                    <img class="mySlides" src="vol3.jpg">
+                  </div>
+                  <div class="col">
+                    <p class="vol-text vol-text-1">
+                      This is an opportunity to hone your skills in communication, counseling, and intervention. You’ll be working alongside volunteers who are also social workers, vets, and managers which can in turn sharpen your adoption and
+                      fostering skills!
+
+                      But most of all, you’ll feel supported. This is a community. We are a big awesome family.
+                    </p>
+                    <p class="vol-text">
+                      We accept applications on a rolling basis. We begin new training cohorts weekly, but space is limited.
+
+                      To apply, applicants must be 18 or older and have a TC ID. You must also submit 2 references. To volunteer, DostunuBul must have access to reliable Internet access and a personal computer.
+                    </p>
+                    <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:20px;">Be a Volunteer!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br><br><br><br>
+
+            <header id="mypets">
+              <div class="w3-container" style="margin-left:-27px; margin-right:-27px; background-color:#354013;">
+                <div class="row row-pets">
+                  <div class="col">
+                    <div class="text-center col-text-btn-2">
+                      <p>You did not enrolled any pet yet!</p>
+                      <p class="row-pets-exp"><i>If you have any new pets let us now! You can enroll them to DostunuBul from here </i></p>
+                      <br>
+                      <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00; color: #5a6c21;font-weight:bold;">Enroll Pets <i class="fas fa-play"></i></button>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img class="col-cat" src="tp.png">
+                  </div>
+                </div>
+              </div>
+              <br><br><br>
+      </div>
+
+      <header id="caretaker">
+        <div class="w3-row-padding w3-center">
+          <br>
+          <br>
+          <div class="w3-container">
+            <div class="row">
+              <div class="col ct-text">
+                <p>
+                  Caretakers are responsible for supervising and taking care of pets in the absence of their owners or while they are being held in an animal control facility.
+                </p>
+                <br>
+                <ul style="text-align:left;">
+                  <p>Your responsiblities will be:</p>
+                  <li>Feed, water, nurture, and care for pets such as dogs, cats, birds, horses, fish or other animals.</li>
+                  <li>Take animal out for regular exercise.</li>
+                  <li>Give rewards and treats for good behavior.</li>
+                  <li>Feed and give water to animal.</li>
+                  <li>Perform wound care on pets that are injured or have gone through surgery.</li>
+                  <li>Brush, bathe, and trim nails of pets.</li>
+                </ul>
+                <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:20px;">Be a Caretaker, Earn Money!</button>
+              </div>
+              <div class="col">
+                <img class="ctkr-img" src="ctkr.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br><br>
+
+        <header id="donate">
+          <div class="w3-row-padding donate-margin">
+            <div class="w3-third w3-margin-bottom">
+              <ul class="w3-ul w3-white w3-center">
+                <li class="w3-black w3-xlarge w3-padding-32"><i>Basic</i></li>
+                <li class="w3-padding-10">Trackability</li>
+                <li class="w3-padding-10">Safety Payment</li>
+                <li class="w3-padding-10">Random Shelter Location</li>
+                <li class="w3-padding-10">Donate Basic Supplements</li>
+                <li class="w3-padding-10">
+                  <h2>50₺</h2>
+                  <span class="w3-opacity">one time experience</span>
+                </li>
+                <li class="w3-light-grey w3-padding-16">
+                  <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00; color: #5a6c21;font-weight:bold;">Shelter Foster Now!</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+              <ul class="w3-ul w3-white w3-center">
+                <li class="w3-xlarge w3-black w3-padding-32"><i>Pro</i></li>
+                <li class="w3-padding-10">Safety Payment</li>
+                <li class="w3-padding-10">Choose Shelter Location</li>
+                <li class="w3-padding-10">Choose Pet</li>
+                <li class="w3-padding-10">Pay the Expenses</li>
+                <li class="w3-padding-10">
+                  <h2>100₺</h2>
+                  <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-16">
+                  <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00; color: #5a6c21;font-weight:bold;">Shelter Foster Now!</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="w3-third">
+              <ul class="w3-ul w3-white w3-center">
+                <li class="w3-black w3-xlarge w3-padding-32"><i>Premium</i></li>
+                <li class="w3-padding-10">Safety Payment</li>
+                <li class="w3-padding-10">Choose Multiple Shelter Locations</li>
+                <li class="w3-padding-10">Choose Multiple Pets</li>
+                <li class="w3-padding-10">Pay Their Expenses</li>
+                <li class="w3-padding-10">
+                  <h2>Above 200₺</h2>
+                  <span class="w3-opacity">per month</span>
+                </li>
+                <li class="w3-light-grey w3-padding-16">
+                  <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold;">Shelter Foster Now!</button>
+                </li>
+              </ul>
+            </div>
+
+            <!--  job section
+      <div class="w3-content w3-section" style="width:400px" "height:200px" id="about">
+        <img class="mySlides" src="me1.jpg" style="width:100%">
+        <img class="mySlides" src="me2.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h3><b>About Me</b></h3>
+        <p><b>SUMMARY OF SKILLS</b><br><br>
+
+          - Include your most marketable skills and accomplishments here.<br>
+          - Ensure the skills you list are relevant to the type of job you are seeking.<br>
+          - Be as specific as possible.<br>
+          - Ensure that this section is full of the keywords employers will likely use when sorting resumes.<br>
+          - If keywords are commonly stated more than on way, you must use both forms of the word (for example, Master of Business Administration and MBA)<br><br>
+
+          <b>WORK EXPERIENCE</b><br><br>
+
+          Administrative Assistant, ABC Company, City, State, 2006 to present<br>
+          - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking.<br>
+          - Don't forget to include a variety of targeted keywords<br>
+          - List jobs in reverse chronological order; your most recent job goes first.<br><br>
+
+          <b>EDUCATION</b><br><br>
+
+          Administrative Assistant Certificate, Any College, City, State<br><br>
+
+          <b>VOLUNTEER EXPERIENCE</b><br><br>
+
+          - Only include this section if it adds information that is relevant to the job you are seeking.<br>
+          - You may also include hobbies here, but only if they are positive and relevant to the job you are seeking.<br><br>
+
+          <b>REFERENCES</b><br><br>
+
+          available upon request</p>
+        <hr>
+
+        <h4><b>Skills</b></h4>
+
+        <p>Experience</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+        </div>
+        <p>Good With Pets</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Proficiency</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+        </div>
+        <p>
+          <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+            <i class="fa fa-download w3-margin-right"></i>Download the Resume
+          </button>
+        </p>
+        <hr>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star straight"></span>
+        <span class="fa fa-star straight"></span>
+        <hr>
+-->
+            <br>
+            <br>
+            <header id="contact">
+              <div class="w3-row-padding w3-center w3-padding-40" style="margin-left:-47px; margin-right:-45px;">
+                <div class="text-center">
+                  <div class="w3-quarter contact">
+                    <br>
+                    <p><i class="fas fa-id-badge fa-2x"></i></p>
+                    <p>Possible Owner</p>
+                  </div>
+                  <div class="w3-quarter contact">
+                    <br>
+                    <p><i class="fa fa-map-marker fa-2x"></i></p>
+                    <p>Mugla, TR</p>
+                  </div>
+                  <div class="w3-quarter contact">
+                    <br>
+                    <p><i class="fa fa-phone fa-2x"></i></p>
+                    <p>545-314-XX-XX</p>
+                  </div>
+                  <div class="w3-quarter contact">
+                    <br>
+                    <p><i class="fa fa-envelope fa-2x"></i></p>
+                    <p>ayseceydaolmez@gmail.com</p>
+                  </div>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-black"><i class="fa fa-edit w3-margin-right"></i><span style="font-size:14px;">Go to Settings</span></button>
+              </div>
+          </div>
+
+          <!-- Footer -->
+          <footer class="w3-container w3-padding-16 footer" style="margin-left:-12px;margin-right:-30px; margin-top:-20px;">
+            <div class="w3-row-padding">
+              <div class="w3-third">
+                <h4><b>About DostunuBul Application</b> </h4>
+                <p>Our proposal commits to a perspective, where animal lives matter. Protection, care, empathy would equally distribute by the shelter system without any profits. On this report, design and analysis have been applied to demo version
+                  of
+                  adoption and fostering system.</p>
+              </div>
+              <div class="w3-third">
+                <h4><b>Latest</b></h4>
+                <ul>
+                  <li>
+                    <p><u>Newest Shelters</u></p>
+                  </li>
+                  <li>
+                    <p><u>Emergency Requirements List</u></p>
+                  </li>
+                  <li>
+                    <p><u>Donate</u></p>
+                  </li>
+                  <li>
+                    <p><u>News on DostunuBul</u></p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="w3-third">
+                <h4><b>Our Contact Page</b></h4>
+                <p><b>Email:</b> shelter.app@gmail.com</p>
+                <p><b>Address:</b> X street, Y building, Istanbul/Turkey</p>
+                <p><b>Telephone:</b> +90 212 852 741</p>
+              </div>
+
+            </div>
+          </footer>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {
+        slideIndex = 1
+      }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+</body>
+
+</html>
