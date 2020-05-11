@@ -1,0 +1,36 @@
+.heading {
+  text-align: center;
+  font-family: 'Numans', sans-serif;
+  font-size: 90px;
+  color: #5a6c21;
+  text-shadow: 2px 2px white;
+}
+
+html, body {
+  font-family: 'Average', serif;
+  background-color: #B0D740 !important;
+}
+
+.btn-approve {
+  color: white;
+  background-color: #FFEA00;
+  border: 2px solid #FFEA00;
+  width: 150px;
+}
+
+.btn-approve:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.app-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #337AB7;
+}

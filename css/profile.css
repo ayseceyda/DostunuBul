@@ -1,0 +1,197 @@
+body {
+  font-family: 'Numans', sans-serif;
+  background-color: #b0d740 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Numans', sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 20%;
+  padding: 2px;
+}
+
+.mySlides {
+  display: none;
+}
+
+body .w3-yellow {
+  background-color: black !important;
+}
+
+.pp {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.unlocked {
+  opacity: 0.4;
+}
+
+.badge-row {
+  text-align: center;
+}
+
+.connection-row {
+  background-color: #B0D740;
+  text-align: center;
+  padding: 5px;
+}
+
+.w3-bar-block a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.w3-quarter .ava-img {
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid #ffea00;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+}
+
+.ava-heading {
+  text-align: center;
+  font-family: 'Numans', sans-serif;
+  font-size: 60px;
+  color: #5a6c21;
+  text-shadow: 2px 2px white;
+}
+
+.ava-exp {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  font-weight: bolder;
+  padding: 20px;
+  opacity: 0.70;
+}
+
+.ava-heading .fa-refresh {
+  color: #5a6c21;
+  text-shadow: 2px 2px white;
+  font-size: 35px;
+}
+
+.btn-primary {
+  color: #5a6c21 !important;
+  background-color: #ffea00 !important;
+  border-color: #ffea00 !important;
+  font-weight: bold !important;
+}
+
+.btn-primary:hover {
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.contact {
+  background-color: #5a6c21 !important;
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  margin-top: 70px;
+  text-align: center;
+  padding-right: 60px;
+}
+
+.footer {
+  background-color: #666666;
+  color: black;
+  font-size: 14px;
+}
+
+.w3-padding-10 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mySlides {
+  width: 775px;
+  height: 500px;
+}
+
+.vol-text {
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.vol-text-1 {
+  margin-top: 30px;
+}
+
+.col-dog {
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.col-cat {
+  height: 400px;
+  width: 400px;
+  margin-right: 100px;
+}
+
+.col-text-btn {
+  margin-top: 120px;
+  margin-right: 220px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.col-text-btn-2 {
+  margin-left: 120px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.row-pets {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.row-pets-exp {
+  font-size: 15px;
+}
+
+.ctkr-img {
+  width: 760px;
+  height: 500px;
+  margin-right: 20px;
+}
+
+.donate-margin {
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.ct-text {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 15px;
+}

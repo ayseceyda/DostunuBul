@@ -1,0 +1,64 @@
+.heading i {
+  font-family: 'Numans', sans-serif;
+  font-size: 90px;
+  color: #5a6c21;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+html, body {
+  font-family: 'Average', serif;
+  background-color: #B0D740 !important;
+}
+
+.btn-approve {
+  color: white !important;
+  background-color: #FFEA00 !important;
+  border: 3px solid #FFEA00 !important;
+  margin-bottom: 15px !important;
+}
+
+.btn-approve:hover {
+  color: black !important;
+  border: 2px solid white !important;
+  background-color: white !important;
+}
+
+.app-text {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+input h4 {
+  color: white;
+}
+
+.col-lg-9 h2 {
+  color: #FFEA00;
+}
+
+.col-lg-9 h4 {
+  color: white;
+  font-weight: bold;
+}
+
+h5, h6 {
+  color: white;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-check-label h5 {
+  color: white;
+}
+
+.center-block {
+  color: white;
+  margin-left: 20px;
+}
+
+.pos-owner-bg {
+  background-color: white;
+}

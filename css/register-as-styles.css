@@ -1,0 +1,49 @@
+html, body {
+  background-color: #B0D740;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 90px;
+  text-align: center;
+  color: #5A6C21;
+  font-family: 'Numans', sans-serif;
+  text-shadow: 2px 2px white;
+}
+
+.btn {
+  color: #5A6C21;
+  background-color: white;
+  font-family: 'Average', serif;
+  font-size: 24px;
+  border-bottom: 3px solid grey;
+  -webkit-box-shadow: inset 0 -3px #2f8e4e;
+  box-shadow: inset 0 -3px #2f8e4e;
+}
+
+.btn:hover {
+  background-color: #FFEA00;
+}
+
+.fa-spin {
+  color: #5A6C21;
+}
+
+p {
+  font-size: 25px;
+  color: black;
+}
+
+.row {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.col-lg-6 {
+  height: 90px;
+}
+
+.check {
+  text-decoration: underline;
+}

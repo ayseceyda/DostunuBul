@@ -1,0 +1,90 @@
+body {
+  font-family: 'Numans', sans-serif;
+  background-color: #b0d740 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Numans', sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 20%;
+  padding: 2px;
+}
+
+body .w3-yellow {
+  background-color: black !important;
+}
+
+.pp {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.unlocked {
+  opacity: 0.4;
+}
+
+.badge-row {
+  text-align: center;
+}
+
+.connection-row {
+  background-color: #B0D740;
+  text-align: center;
+  padding: 5px;
+}
+
+.w3-bar-block a {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lab {
+  width: 800px;
+  height: 500px;
+  margin-left: 150px;
+  border-radius: 25px;
+  border: 5px solid #354013;
+}
+
+.tb {
+  margin-left: 230px;
+  color: white;
+  font-size: bold;
+  font-size: 18px;
+}
+
+.w3-container-buttons {
+  background-color: #8EAC34;
+  margin-left: -10px;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container-table {
+  background-color: #5a6d20;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: -10px;
+}
+
+.container-heading {
+  margin-bottom: 50px;
+  background-color: #ffea00;
+  margin-left: -10px;
+}
+
+.footer {
+  background-color: #666666;
+  color: black;
+  font-size: 14px;
+}
