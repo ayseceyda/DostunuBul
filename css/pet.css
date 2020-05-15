@@ -63,13 +63,6 @@ body .w3-yellow {
   font-size: 18px;
 }
 
-.w3-container-buttons {
-  background-color: #8EAC34;
-  margin-left: -10px;
-  margin-top: 80px;
-  padding-bottom: 80px;
-}
-
 .container-table {
   background-color: #5a6d20;
   padding-top: 80px;
@@ -81,6 +74,18 @@ body .w3-yellow {
   margin-bottom: 50px;
   background-color: #ffea00;
   margin-left: -10px;
+}
+
+.remote-btn {
+  border: none;
+}
+
+.col span {
+  color: #5e5b5b;
+}
+
+.col i {
+  color: #5e5b5b;
 }
 
 .footer {

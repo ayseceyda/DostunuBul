@@ -6,12 +6,12 @@
   <title>Pet Page</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="pet.css">
+  <link rel="stylesheet" href="../css/pet.css">
   <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script type="text/javascript" src="pet.js"></script>
+  <script type="text/javascript" src="../js/pet.js"></script>
   <script src="https://kit.fontawesome.com/8b37508490.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@
 
     <div class="w3-container">
       <br>
-      <img class="pp" src="user-pp.JPG">
+      <img class="pp" src="../img/user-pp.JPG">
       <br>
       <a href="profile.html">
         <p style="text-align:center;color:white;font-weight:bold;font-size:20px;"><i><b>aycey71</b></i></p>
@@ -84,13 +84,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block lab" src="lab3.jpg" alt="First slide">
+            <img class="d-block lab" src="../img/lab3.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block lab" src="lab2.jpg" alt="Second slide">
+            <img class="d-block lab" src="../img/lab2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block lab" src="lab1.jpg" alt="Third slide">
+            <img class="d-block lab" src="../img/lab1.jpg" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -220,40 +220,19 @@
       <div class="w3-container">
         <div class="row">
           <div class="col">
-            <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Home Foster</button>
+            <button onclick="alertFunc()" class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Home Foster</button>
           </div>
           <div class="col">
             <button onclick="alertFunc()" class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Adopt</button>
           </div>
           <div class="col">
-            <button class="w3-button w3-padding-large" style="background-color: grey;   color: black;font-weight:bold; font-size:25px;"><i class="fas fa-lira-sign"></i> Apply for Remote Foster</button>
+            <button class="remote-btn w3-padding-large" style="background-color: grey;   color: black;font-weight:bold; font-size:25px;"><i class="fas fa-lira-sign"></i> <span>Apply for Remote Foster</span></button>
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="w3-row-padding w3-center w3-container-buttons">
-      <br>
-      <br>
-      <br>
-      <div class="w3-container">
-        <div class="row">
-          <div class="col">
-            <button class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Forum Search <b>#SHDF7438</b></button>
-          </div>
-          <div class="col">
-            <button onclick="alertFunc()" class="w3-button w3-padding-large w3-hover-black" style="background-color: #ffea00;   color: #5a6c21;font-weight:bold; font-size:25px;"><i class="fas fa-home"></i> Apply for Adopt</button>
-          </div>
-          <div class="col">
-            <button class="w3-button w3-padding-large" style="background-color: grey;   color: black;font-weight:bold; font-size:25px;"><i class="fas fa-lira-sign"></i> Apply for Remote Foster</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-16 footer" style="margin-left:-12px;margin-right:-30px; margin-top:-20px;">
+    <footer class="w3-container w3-padding-16 footer" style="margin-left:-12px;margin-right:-30px; margin-top:60px;">
       <div class="w3-row-padding">
         <div class="w3-third">
           <h4><b>About DostunuBul Application</b> </h4>
