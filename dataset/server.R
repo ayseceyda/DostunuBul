@@ -10,6 +10,12 @@ function(input, output) {
     if (input$Temperament != "All") {
       data <- data[data$Temperament == input$Temperament,]
     }
+    if (input$Species != "All") {
+      data <- data[data$Species == input$Species,]
+    }
+    if (input$From != "All") {
+      data <- data[data$From == input$From,]
+    }
     if (input$Hypoallergenic != "All") {
       data <- data[data$Hypoallergenic == input$Hypoallergenic,]
     }
@@ -18,6 +24,21 @@ function(input, output) {
     }
     if (input$Activity.Level != "All") {
       data <- data[data$Activity.Level == input$Activity.Level,]
+    }
+    if (input$Neutered != "All") {
+      data <- data[data$Neutered == input$Neutered,]
+    }
+    if (input$Adopted != "All") {
+      data <- data[data$Adopted == input$Adopted,]
+    }
+    if (input$HomeFoster != "All") {
+      data <- data[data$HomeFoster == input$HomeFoster,]
+    }
+    if (input$RemoteFoster != "All") {
+      data <- data[data$RemoteFoster == input$RemoteFoster,]
+    }
+    if (input$Caretaker != "All") {
+      data <- data[data$Caretaker == input$Caretaker,]
     }
     if (input$Info != "All") {
       data <- data[data$Info == input$Info,]

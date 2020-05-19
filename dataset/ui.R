@@ -3,49 +3,77 @@ library(shiny)
 library(dplyr)
 
 fluidPage(theme = "custom.css",
-  titlePanel(h3("Find Your Best Match Dog Friend")),
+  titlePanel(h1("Find Your Friend")),
   rel="stylesheet",type="text/css",href="custom.css",
   sidebarLayout(
-    sidebarPanel(width=3,
-     
-               selectInput("Temperament",
-                           h4("Temperament"),
-                           as.character(data$Temperament),multiple = TRUE,selectize = TRUE),
-        helpText("Please choose attributes of your dog friend"),
-               selectInput("Activity.Level",
-                           h4("Activity Level"),
-                           c("All",
-                             unique(as.character(data$Activity.Level)))),
-               
-        helpText("You can choose the activity level of your dog friend"),
+    sidebarPanel(width=3,class="side-color",
+        
+        selectInput("Species",
+                    h4("Species"),
+                    c("All",
+                      unique(as.character(data$Species)))),
+        
+        selectInput("Temperament",
+                    h4("Temperament"),
+                    as.character(data$Temperament),multiple = TRUE,selectize = TRUE),
       
-               selectInput("Hypoallergenic",
-                           h4("Hypoallergenic"),
-                           c("All",
-                             unique(as.character(data$Hypoallergenic)))),
-
-        helpText("Hypoallergenic case matters for you?"),
+        selectInput("Activity.Level",
+                    h4("Activity Level"),
+                    c("All",
+                      unique(as.character(data$Activity.Level)))),
+        
+        selectInput("Hypoallergenic",
+                    h4("Hypoallergenic"),
+                    c("All",
+                      unique(as.character(data$Hypoallergenic)))),
+      
+        selectInput("From",
+                    h4("From"),
+                    c("All",
+                      unique(as.character(data$From)))),
+        
+        selectInput("Adopted",
+                    h4("Adopted"),
+                    c("All",
+                      unique(as.character(data$Adopted)))),
+        
+        selectInput("HomeFoster",
+                    h4("Home Fostered"),
+                    c("All",
+                      unique(as.character(data$HomeFoster)))),
+        
+        selectInput("RemoteFoster",
+                    h4("Remote Fostered"),
+                    c("All",
+                      unique(as.character(data$RemoteFoster)))),
+        
+        selectInput("Caretaker",
+                    h4("Caretakered"),
+                    c("All",
+                      unique(as.character(data$Caretaker)))),
+        
+        selectInput("Neutered",
+                    h4("Neutered"),
+                    c("All",
+                      unique(as.character(data$Neutered)))),
+        
 
                selectInput("Good_With_Children",
                            h4("Good With Children"),
                            c("All",
                              unique(as.character(data$Good_With_Children)))),
 
-        helpText("Children case matters for you?"),
 
                selectInput("Info",
                            h4("Group"),
                            c("All",
                              unique(as.character(data$Info)))),
 
-        helpText("You can choose the group of your dog friend"),
 
                selectInput("Size",
                            h4("Size"),
                            c("All",
-                             unique(as.character(data$Size)))),
-
-        helpText("You can choose the size of your dog friend")
+                             unique(as.character(data$Size))))
 
     ),
   

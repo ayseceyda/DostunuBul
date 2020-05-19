@@ -1,16 +1,36 @@
-h3{
-  color:black;
-  font-family: 'Lobster', cursive;
+h3 {
+  color: #ffea00;
   font-weight: 500;
   line-height: 1.1;
+  font-family: 'Average', serif;
 }
 
-h4{
-  color:green;
-  font-family: 'Lobster', cursive;
+h4 {
+  color: #5a6c20;
+  font-family: 'Average', serif;
+  font-weight: bold;
 }
 
-body{
-  background-image:url("corgis.jpg");
-  background-repeat:repeat;
+body {
+  background-color: #CFEF2E;
+  background-repeat: repeat;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Numans', sans-serif;
+  font-size: 60px;
+  color: #5a6c21;
+  text-shadow: 2px 2px white;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.side-color {
+  background-color: #ffea00;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  margin-left: 30px;
 }
