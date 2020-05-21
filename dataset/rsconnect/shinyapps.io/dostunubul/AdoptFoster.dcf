@@ -1,0 +1,13 @@
+name: AdoptFoster
+title: AdoptFoster
+username:
+account: dostunubul
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2336509
+bundleId: 3175002
+url: https://dostunubul.shinyapps.io/AdoptFoster/
+when: 1590070755.91184
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: blist.csv|dataset-details.R|merge-details.R|whole.csv|wikiblist.csv|wikizero.csv|wikizero/.RData|wikizero/.Rhistory|wikizero/wikizero.R|www/bg.png
