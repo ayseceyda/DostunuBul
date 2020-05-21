@@ -31,6 +31,7 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 ## PROFILE PAGE
 
+![profile](https://user-images.githubusercontent.com/29989590/82576295-5c0b5b00-9b92-11ea-89ca-7e3d3ac4f058.png)
 
 ## PET PAGE TEMPLATE
 
