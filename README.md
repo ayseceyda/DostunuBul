@@ -61,8 +61,13 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 ## PET PAGE - FEATURES
 
-![pet3](https://user-images.githubusercontent.com/29989590/81610041-86665700-93e1-11ea-9af9-075362ecda03.png)
+![pet3]![table](https://user-images.githubusercontent.com/29989590/82551104-497c2c00-9b68-11ea-8a41-8d879efa3e23.png)
 
 ## PET PAGE - APPLICATIONS
 
 ![footer-app](https://user-images.githubusercontent.com/29989590/82087443-c63a8080-96f8-11ea-9038-86fc8d6a1fb7.png)
+
+## ADOPT/FOSTER PAGE - R Shiny DB
+
+[a link](https://dostunubul.shinyapps.io/dostunuBul/)
+![r shiny db](https://user-images.githubusercontent.com/29989590/82551361-b42d6780-9b68-11ea-998a-8f0bbffde7d6.png)
