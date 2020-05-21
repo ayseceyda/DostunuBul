@@ -21,7 +21,7 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 ## REGISTER AS PAGE
 
-<div><img src="https://user-images.githubusercontent.com/29989590/82576702-a8ef3180-9b92-11ea-89fe-a3528c134ec3.gif" width="450" height="450"/></div>
+<div><img src="https://user-images.githubusercontent.com/29989590/82576702-a8ef3180-9b92-11ea-89fe-a3528c134ec3.gif" width="450" height="900"/></div>
 
 ## REGISTER PAGE
 
