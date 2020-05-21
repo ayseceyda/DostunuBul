@@ -37,5 +37,6 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 ## PET PAGE TEMPLATE
 
+<div><img src="https://user-images.githubusercontent.com/29989590/82577884-4a2ab780-9b94-11ea-8fff-cee60336d9bb.gif" width="910" height="450"/></div>
 
 ## ADOPT/FOSTER PAGE - R Shiny APP
