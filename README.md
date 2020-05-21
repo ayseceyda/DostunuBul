@@ -39,6 +39,7 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 <div><img src="https://user-images.githubusercontent.com/29989590/82577884-4a2ab780-9b94-11ea-8fff-cee60336d9bb.gif" width="910" height="450"/></div>
 
-![pet-page2](https://user-images.githubusercontent.com/29989590/82578027-852ceb00-9b94-11ea-8743-0d7ebb1450b1.png)
-
 ## ADOPT/FOSTER PAGE - R Shiny APP
+
+<div><img src="https://user-images.githubusercontent.com/29989590/82578159-b1486c00-9b94-11ea-88d7-07166468cbfe.gif" width="910" height="450"/></div>
+
