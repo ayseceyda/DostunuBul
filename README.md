@@ -19,27 +19,27 @@ Projeye ait ilk prototip GitHub depolama servisi üzerinden paylaşılmıştır.
 
 ![login](https://user-images.githubusercontent.com/29989590/81607421-55842300-93dd-11ea-9192-4bb4b35deff7.png)
 
-## REGISTER AS PAGE
+## _**REGISTER AS PAGE**_
 
 <div><img src="https://user-images.githubusercontent.com/29989590/82576702-a8ef3180-9b92-11ea-89fe-a3528c134ec3.gif" width="910" height="450"/></div>
 
-## REGISTER PAGE
+## _**REGISTER PAGE**_
 
 ![register](https://user-images.githubusercontent.com/29989590/81607573-90865680-93dd-11ea-84a6-76c3b51a12f1.png)
 
-## CONFIRMATION PAGE
+## _**CONFIRMATION PAGE**_
 
 ![confirmation](https://user-images.githubusercontent.com/29989590/81609683-fb855c80-93e0-11ea-8877-1fdd5b068f43.png)
 
-## PROFILE PAGE
+## _**PROFILE PAGE**_
 
 ![profile](https://user-images.githubusercontent.com/29989590/82576295-5c0b5b00-9b92-11ea-89ca-7e3d3ac4f058.png)
 
-## PET PAGE TEMPLATE
+## _**PET PAGE TEMPLATE**_
 
 <div><img src="https://user-images.githubusercontent.com/29989590/82577884-4a2ab780-9b94-11ea-8fff-cee60336d9bb.gif" width="910" height="450"/></div>
 
-## ADOPT/FOSTER PAGE - R Shiny APP
+## _**ADOPT/FOSTER PAGE - R Shiny APP**_
 
 <div><img src="https://user-images.githubusercontent.com/29989590/82578159-b1486c00-9b94-11ea-88d7-07166468cbfe.gif" width="910" height="450"/></div>
 
