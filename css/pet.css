@@ -34,12 +34,9 @@ body .w3-yellow {
 
 .badge-row {
   text-align: center;
-}
-
-.connection-row {
-  background-color: #B0D740;
-  text-align: center;
-  padding: 5px;
+  background-color: #ffea00;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .w3-bar-block a {
@@ -84,7 +81,7 @@ body .w3-yellow {
   color: #5e5b5b;
 }
 
-.col i {
+.col .fa-lira-sign {
   color: #5e5b5b;
 }
 
