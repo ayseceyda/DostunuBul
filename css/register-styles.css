@@ -11,7 +11,13 @@ html, body {
   background-color: #B0D740 !important;
 }
 
+.hr {
+  border: 3px solid #5a6d20;
+}
+
 .btn-approve {
+  font-weight: bold !important;
+  font-family: 'Numans', sans-serif;
   color: white !important;
   background-color: #FFEA00 !important;
   border: 3px solid #FFEA00 !important;
@@ -25,6 +31,7 @@ html, body {
 }
 
 .app-text {
+  font-family: 'Numans', sans-serif;
   font-size: 20px !important;
   font-weight: bold !important;
 }
@@ -34,7 +41,7 @@ input h4 {
 }
 
 .col-lg-9 h2 {
-  color: #FFEA00;
+  color: #5a6d20;
 }
 
 .col-lg-9 h4 {
@@ -56,9 +63,16 @@ h5, h6 {
 
 .center-block {
   color: white;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .pos-owner-bg {
   background-color: white;
+}
+
+.footer {
+  background-color: #666666;
+  color: black;
+  font-size: 14px;
+  padding-left: 120px;
 }

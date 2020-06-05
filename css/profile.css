@@ -33,17 +33,14 @@ body .w3-yellow {
 }
 
 .unlocked {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .badge-row {
   text-align: center;
-}
-
-.connection-row {
-  background-color: #B0D740;
-  text-align: center;
-  padding: 5px;
+  background-color: #ffea00;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .w3-bar-block a {
@@ -82,7 +79,7 @@ body .w3-yellow {
   opacity: 0.70;
 }
 
-.ava-heading .fa-refresh {
+.ava-heading .fa-sync {
   color: #5a6c21;
   text-shadow: 2px 2px white;
   font-size: 35px;
